@@ -1,4 +1,5 @@
-data <- read.csv("~/Predictive Models/datasets/AdultData_orig.csv")
+setwd("~/Project")
+data <- read.csv("~/Project/AdultData_orig.csv")
 str(data)
 
 data[[ "age"]] <- ordered(cut(data[[ "age"]], c(15,35,65,100)),
